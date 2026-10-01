@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEREIN | Contact</title>
+    <link
+      rel="shortcut icon"
+      href="images/SEREINICON.png"
+      alt="SEREIN"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <a href="index.html" class="logo">
+            <img src="images/PRIMSEREINLOGO.png" alt="SEREIN" />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <p>GET IN TOUCH</p>
+          <h1>Contact Us</h1>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact-container">
+          <div class="contact-info">
+            <p class="label">VISIT SEREIN</p>
+
+            <h2>We'd Love<br />to Hear From You</h2>
+
+            <p>
+              Have a question, feedback, or simply want to say hello? Get in
+              touch with our team.
+            </p>
+
+            <div class="info">
+              <div class="info-card">
+                <h3>Location</h3>
+                <p>Cebu City, Philippines</p>
+              </div>
+
+              <div class="info-card">
+                <h3>Phone</h3>
+                <p>+63 912 345 6789</p>
+              </div>
+
+              <div class="info-card">
+                <h3>Email</h3>
+                <p>hello@sereinrestaurant.com</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <!-- Text Input -->
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <!-- Email Input -->
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <!-- Telephone Input -->
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+              minlength="10"
+              maxlength="11"
+              pattern="[0-9]{10,11}"
+            />
+
+            <!-- Dropdown / Select -->
+            <label for="inquiry">Type of Inquiry</label>
+            <select id="inquiry" name="inquiry" required>
+              <option value="">Select an option</option>
+              <option value="reservation">Reservation</option>
+              <option value="menu">Menu Inquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="event">Private Event</option>
+              <option value="other">Other</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <label>How did you hear about us?</label>
+
+            <div class="radio-group">
+              <label>
+                <input
+                  type="radio"
+                  name="source"
+                  value="social-media"
+                  required
+                />
+                Social Media
+              </label>
+
+              <label>
+                <input type="radio" name="source" value="friend" />
+                Friend or Family
+              </label>
+
+              <label>
+                <input type="radio" name="source" value="search" />
+                Search Engine
+              </label>
+            </div>
+
+            <!-- Checkboxes -->
+            <label>What are you interested in?</label>
+
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="interest" value="reservations" />
+                Reservations
+              </label>
+
+              <label>
+                <input type="checkbox" name="interest" value="events" />
+                Events
+              </label>
+
+              <label>
+                <input type="checkbox" name="interest" value="promotions" />
+                Promotions
+              </label>
+            </div>
+
+            <!-- Textarea -->
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+
+            <div class="form-buttons">
+              <button type="submit">Send Message</button>
+              <button type="reset" class="reset-button">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="location">
+        <div class="location-text">
+          <h2>Find Us in Cebu</h2>
+          <p>Come visit SEREIN and experience the flavors of Cebu in person.</p>
+        </div>
+
+        <div class="map-box">
+          <img src="images/CEBUCITY.png" alt="Cebu City, Philippines" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3>SEREIN</h3>
+          <p>A celebration of authentic Cebuano cuisine.</p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div>
+          <h4>Visit Us</h4>
+          <p>Cebu City, Philippines</p>
+          <p>11:00 AM – 10:00 PM</p>
+        </div>
+      </div>
+
+      <div class="copyright">© 2026 SEREIN. All Rights Reserved.</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

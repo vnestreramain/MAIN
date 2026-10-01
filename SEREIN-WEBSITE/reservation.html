@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEREIN | Reservation</title>
+    <link
+      rel="shortcut icon"
+      href="images/SEREINICON.png"
+      alt="SEREIN"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <a href="index.html" class="logo">
+            <img src="images/PRIMSEREINLOGO.png" alt="SEREIN" />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html" class="active">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <p>JOIN US</p>
+          <h1>Reserve a Table</h1>
+        </div>
+      </section>
+
+      <section class="reservation">
+        <div class="reservation-container">
+          <div class="reservation-text">
+            <p class="label">YOUR TABLE AWAITS</p>
+
+            <h2>Make Your<br />Visit Special</h2>
+
+            <p>
+              Whether it is a family gathering, a romantic dinner, or simply a
+              celebration of Cebuano food, we would love to welcome you.
+            </p>
+
+            <div class="details">
+              <p class="details-title">Opening Hours</p>
+              <div class="table-hours">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Day</th>
+                      <th>Opening</th>
+                      <th>Closing</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Monday</td>
+                      <td>11:00 AM</td>
+                      <td>9:00 PM</td>
+                    </tr>
+
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>11:00 AM</td>
+                      <td>9:00 PM</td>
+                    </tr>
+
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>11:00 AM</td>
+                      <td>10:00 PM</td>
+                    </tr>
+
+                    <tr>
+                      <td>Thursday</td>
+                      <td>11:00 AM</td>
+                      <td>10:00 PM</td>
+                    </tr>
+
+                    <tr>
+                      <td>Friday</td>
+                      <td>11:00 AM</td>
+                      <td>11:00 PM</td>
+                    </tr>
+
+                    <tr>
+                      <td>Saturday</td>
+                      <td>10:00 AM</td>
+                      <td>11:00 PM</td>
+                    </tr>
+
+                    <tr>
+                      <td>Sunday</td>
+                      <td>10:00 AM</td>
+                      <td>9:00 PM</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <form class="reservation-form">
+            <label for="res-name">Full Name</label>
+            <input
+              type="text"
+              id="res-name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+
+            <label for="res-email">Email</label>
+            <input
+              type="email"
+              id="res-email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+
+            <label for="res-phone">Phone Number</label>
+            <input
+              type="tel"
+              id="res-phone"
+              name="phone"
+              placeholder="Your phone number"
+              required
+            />
+
+            <div class="form-row">
+              <div>
+                <label for="res-date">Date</label>
+                <input type="date" id="res-date" name="date" required />
+              </div>
+
+              <div>
+                <label for="res-time">Time</label>
+                <input type="time" id="res-time" name="time" required />
+              </div>
+            </div>
+
+            <label for="res-guests">Number of Guests</label>
+            <select id="res-guests" name="guests" required>
+              <option value="">Select guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6+">6+ Guests</option>
+            </select>
+
+            <label for="res-request">Special Request</label>
+            <textarea
+              id="res-request"
+              name="request"
+              placeholder="Any special requests?"
+              rows="5"
+            ></textarea>
+
+            <button type="submit">Request Reservation</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3>SEREIN</h3>
+          <p>A celebration of authentic Cebuano cuisine.</p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div>
+          <h4>Visit Us</h4>
+          <p>Cebu City, Philippines</p>
+          <p>11:00 AM – 10:00 PM</p>
+        </div>
+      </div>
+
+      <div class="copyright">© 2026 SEREIN. All Rights Reserved.</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
